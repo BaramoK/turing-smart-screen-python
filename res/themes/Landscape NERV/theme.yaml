@@ -1,0 +1,190 @@
+---
+author: "@mathoudebine"
+
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 0, 0, 255
+
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 480
+    HEIGHT: 320
+static_text:
+  CPU_MODEL:
+    TEXT: i5*3570K
+    X: 107
+    Y: 107
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 17
+    FONT_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+  GPU_MODEL:
+    TEXT: GTX*1070
+    X: 288
+    Y: 108
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 17
+    FONT_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+  MEMORY_MODEL_1:
+    TEXT: Tactical
+    X: 198
+    Y: 150
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 17
+    FONT_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+  MEMORY_MODEL_2:
+    TEXT: RAM
+    X: 225
+    Y: 170
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 17
+    FONT_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+  MB_MODEL:
+    TEXT: GA*H77N
+    X: 200
+    Y: 56
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 17
+    FONT_COLOR: 0, 0, 0
+    BACKGROUND_IMAGE: background.png
+STATS:
+  CPU:
+    FREQUENCY:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: False
+        X: 110
+        Y: 207
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    PERCENTAGE:
+      INTERVAL: 1
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 17
+        Y: 52
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      INTERVAL: 5
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 5
+        Y: 155
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+  MEMORY:
+    INTERVAL: 5
+    VIRTUAL:
+      PERCENT_TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 195
+        Y: 256
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+  GPU:
+    INTERVAL: 1
+    PERCENTAGE:
+      TEXT:
+        SHOW: True
+        SHOW_UNIT: True
+        X: 378
+        Y: 50
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    TEMPERATURE:
+      TEXT: 
+        SHOW: True
+        SHOW_UNIT: True
+        X: 365
+        Y: 155
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 30
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+#    FPS:
+#      TEXT:
+#        SHOW: True
+#        SHOW_UNIT: False
+#        X: 302
+#        Y: 125
+#        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+#        FONT_SIZE: 20
+#        FONT_COLOR: 0, 0, 0
+#        BACKGROUND_IMAGE: background.png   
+  NET:
+    INTERVAL: 1
+    ETH:
+      DOWNLOAD:
+        TEXT:
+          SHOW: True
+          X: 30
+          Y: 282
+          FONT: generale-mono/GeneraleMonoA.ttf
+          FONT_SIZE: 14
+          FONT_COLOR: 0, 0, 0
+          BACKGROUND_IMAGE: background.png
+      UPLOAD:
+        TEXT:
+          SHOW: True
+          X: 40
+          Y: 295
+          FONT: generale-mono/GeneraleMonoA.ttf
+          FONT_SIZE: 14
+          FONT_COLOR: 0, 0, 0
+          BACKGROUND_IMAGE: background.png
+# DISK:
+#    INTERVAL: 10
+#    USED:
+#      PERCENT_TEXT:
+#        SHOW: True
+#        SHOW_UNIT: True
+#        X: 371
+#        Y: 236
+#        FONT: jetbrains-mono/JetBrainsMono-Bold.ttf
+#        FONT_SIZE: 46
+#        FONT_COLOR: 0, 0, 0
+#        BACKGROUND_IMAGE: background.png
+  DATE:
+    # For time display, it is recommended not to change the interval: keep to 1
+    INTERVAL: 1
+    DAY: # Format (Y/M/D ordering, month/day translations...) will match your computer locale
+      TEXT:
+        FORMAT: short # short (2/20/23) / medium (Feb 20, 2023) / long (February 20, 2023) / full (Monday, February 20, 2023)
+        SHOW: True
+        X: 355
+        Y: 282
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 14
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png
+    HOUR: # Format (12/24h, timezone translations) will match your computer locale
+      TEXT:
+        FORMAT: long # short (6:48 PM) / medium (6:48:53 PM) / long (6:48:53 PM UTC) / full (6:48:53 PM Coordinated Universal Time)
+        SHOW: True
+        X: 350
+        Y: 296
+        FONT: generale-mono/GeneraleMonoA.ttf
+        FONT_SIZE: 14
+        FONT_COLOR: 0, 0, 0
+        BACKGROUND_IMAGE: background.png

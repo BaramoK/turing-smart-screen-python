@@ -1,0 +1,24 @@
+---
+author: "@mathoudebine"
+
+display:
+  DISPLAY_ORIENTATION: landscape
+  DISPLAY_RGB_LED: 0, 0, 255
+
+static_images:
+  BACKGROUND:
+    PATH: background.png
+    X: 0
+    Y: 0
+    WIDTH: 480
+    HEIGHT: 320
+    
+static_text:
+  SHUTDOWN:
+    TEXT: <<Gilgamesh>>
+    X: 25
+    Y: 135
+    FONT: generale-mono/GeneraleMonoA.ttf
+    FONT_SIZE: 50
+    FONT_COLOR: 255, 0, 0
+    BACKGROUND_IMAGE: background.png
